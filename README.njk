@@ -6,11 +6,14 @@ _Owned by: **{{repoTeam.name}}**_
 
 {{repoDescription}}
 
-{% if repoTopics %}
 ### Topics
+
+{% if repoTopics %}
 {% for topic in repoTopics %}
 - {{ topic }}
 {% endfor %}
+{% else %}
+No topics assigned to this repository.
 {% endif %}
 
 ## Owning Team
