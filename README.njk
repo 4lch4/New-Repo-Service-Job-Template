@@ -6,6 +6,16 @@ _Owned by: **{{repoTeam}}**_
 
 {{repoDescription}}
 
+{% if repoTags %}
+
+### Tags
+
+{% for tag in repoTags %}
+- {{ tag }}
+{% endfor %}
+
+{% endif %}
+
 ## Owning Team
 
 {{repoTeam}}
